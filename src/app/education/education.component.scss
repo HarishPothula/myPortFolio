@@ -1,0 +1,16 @@
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+    background: {
+        image: ($imgpath);
+        position: $position;
+        repeat: $repeat;
+    }
+}
+.content {
+    height: 100%;
+    width: 100%;
+    @include background('../../images/education.jpg');
+}
+.card-img-left {
+  height: 15rem;
+  width: 15rem
+}

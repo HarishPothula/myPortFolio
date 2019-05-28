@@ -1,0 +1,12 @@
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+    background: {
+        image: ($imgpath);
+        position: $position;
+        repeat: $repeat;
+    }
+}
+.content-area {
+    @include background('../../images/a.jpg');
+    height: 100%;
+    width: 100%;
+}

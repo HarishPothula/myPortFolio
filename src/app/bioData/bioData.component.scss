@@ -1,0 +1,75 @@
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+    }
+}
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+.content-container-1{
+    min-height: -moz-calc(100% - 0px);
+    min-height: -webkit-calc(100% - 0px);
+    min-height: calc(100% - 0px);
+    position:relative;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: inherit;
+
+}
+.content-container-1:after {
+    content:"";
+    width:1px;
+    height:100%;
+    display:block;
+    right:75%;
+    position:absolute;
+    background: #dedede;
+}
+
+.page-content {
+    display: inline-block;
+    height: 100%;
+    width: 100%
+}
+.main {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.side {
+    height: 100%;
+    width: 100%;
+}
+span{
+    color: #00ff9c;
+}
+.theme-color {
+    background: linear-gradient(to right, #00c2eb 20%, #00ff9c 40%, #00ff9c 60%, #00c2eb 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.colors {
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-animation: shine 12s linear infinite;
+    -webkit-animation: shine 12s linear infinite;
+    animation: shine 12s linear infinite;
+}
+
+.info {
+    padding: 2vmax;
+}
+.logo {
+    height:40vh;
+    width: 23vw;
+    padding-top: 1vh;
+}
